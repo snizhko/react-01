@@ -1,0 +1,62 @@
+body {
+  color: #ded;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.app-wrapper {
+  display: grid;
+  grid-template-areas: "h h" "n c" "f f";
+  grid-template-rows: 70px auto 70px;
+  grid-template-columns: 200px auto;
+}
+
+.header {
+  grid-area: h;
+  background-color: #353535;
+}
+
+.nav {
+  grid-area: n;
+  background-color: #353535;
+}
+
+.content {
+  grid-area: c;
+  min-height: calc(100vh - 140px);
+  color: #262626;
+}
+
+.footer {
+  grid-area: f;
+  background-color: #353535;
+}
+
+/*content*/
+.profile-image_wrap {
+  height: 340px;
+  width: 100%;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+}
