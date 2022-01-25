@@ -1,6 +1,11 @@
+.profile {
+  padding: 10px;
+}
+
 .img_wrap {
   height: 340px;
-  width: 100%;
+  width: calc(100% + 10px + 10px);
+  margin: -10px -10px 10px;
 }
 
 .pic {

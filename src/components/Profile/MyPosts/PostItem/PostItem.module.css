@@ -3,6 +3,9 @@
     align-items: center;
     flex-wrap: wrap;
     border: 1px solid #012;
+    margin: 10px 0;
+    padding: 10px;
+    width: 400px;
 }
 
 .pic {
@@ -10,7 +13,11 @@
     height: 30px;
 }
 
-.text {
+.message {
     margin-left: 10px;
     max-width: calc(100% - 30px - 10px);
+}
+
+.like {
+    margin-left: auto;
 }

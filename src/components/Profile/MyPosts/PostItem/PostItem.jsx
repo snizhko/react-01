@@ -1,6 +1,6 @@
 import s from "./PostItem.module.css";
 
-const PostItem = () => {
+const PostItem = (props) => {
   return (
     <div className={s.item}>
       <div className={s.pic}>
@@ -10,7 +10,8 @@ const PostItem = () => {
           alt="avatar"
         />
       </div>
-      <div className={s.text}>123123 123123 345345 546 456</div>
+      <div className={s.message}>{props.message}</div>
+      <div className={s.like}>Likes: {props.likes}</div>
     </div>
   );
 };
