@@ -7,10 +7,6 @@ const MyPosts = () => {
       <div className={s.post}></div>
       <div className={s.list}>
         <PostItem />
-        <PostItem />
-        <PostItem />
-        <PostItem />
-        <PostItem />
       </div>
     </div>
   );
