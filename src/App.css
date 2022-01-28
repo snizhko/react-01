@@ -2,6 +2,10 @@ body {
   color: #ded;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 p, ul {
   padding: 0;
   margin: 0;
@@ -28,4 +32,8 @@ img {
   grid-area: m;
   min-height: calc(100vh - 140px);
   color: #262626;
+}
+
+.title {
+  margin-bottom: 10px;
 }
