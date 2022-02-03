@@ -1,12 +1,12 @@
 .nav {
   grid-area: n;
-  background-color: #353535;
+  background-color: var(--mainBg);
   padding: 20px;
 }
 
 .item {
   margin-bottom: 10px;
-  color: #eee;
+  color: var(--mainColorInvert);
 }
 
 .item a {

@@ -1,4 +1,8 @@
 .footer {
   grid-area: f;
-  background-color: #353535;
+  background-color: var(--mainBg);
+  color: var(--mainColorInvert);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

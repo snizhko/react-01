@@ -3,16 +3,7 @@ import PostItem from "./PostItem/PostItem"
 
 const MyPosts = (props) => {
 
-    let posts = [
-        {id: 1, likesCount: 0, message: 'Hi!'},
-        {id: 2, likesCount: 54, message: 'It\'s my first post!'},
-        {id: 3, likesCount: 32, message: 'It\'s my first post 1!'},
-        {id: 4, likesCount: 11, message: 'It\'s my first post 2!'},
-        {id: 5, likesCount: 16, message: 'It\'s my first post 3!'},
-        {id: 6, likesCount: 9, message: 'It\'s my first post 4!'},
-    ];
-
-    let postsElement = posts.map((p, i) => <PostItem key={i} id={p.id} likes={p.likesCount} message={p.message}/>);
+    let postsElement = props.posts.map((p, i) => <PostItem key={i} id={p.id} likes={p.likesCount} message={p.message}/>);
 
     return (
         <div className={s.posts}>
@@ -22,7 +13,7 @@ const MyPosts = (props) => {
                 <textarea className={s.textarea}></textarea>
                 </div>
                 <div className={s.btn_wrap}>
-                    <button className={s.btn}>Add post</button>
+                    <button className={s.btn + ' btn'}>Add post</button>
                 </div>
             </div>
             <div className={s.list}>

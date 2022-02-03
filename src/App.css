@@ -1,39 +1,78 @@
-body {
-  color: #ded;
+:root {
+    --mainBg: #353535;
+    --mainColor: #262626;
+    --mainColorInvert: #eee;
+    --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    --borderRadius: 5px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+    margin: 0;
 }
 
 p, ul {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+textarea {
+    min-height: 100px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: var(--borderRadius);
+    resize: none;
+    padding: 5px 10px;
+    font-family: var(--fontFamily);
+    font-size: 14px;
+}
+
+body {
+    color: #ded;
+    font-family: var(--fontFamily);
 }
 
 .app-wrapper {
-  display: grid;
-  grid-template-areas: "h h" "n m" "f f";
-  grid-template-rows: 70px auto 70px;
-  grid-template-columns: 200px auto;
+    display: grid;
+    grid-template-areas: "h h" "n m" "f f";
+    grid-template-rows: 70px auto 70px;
+    grid-template-columns: 200px auto;
 }
 
 .main {
-  grid-area: m;
-  min-height: calc(100vh - 140px);
-  color: #262626;
+    grid-area: m;
+    min-height: calc(100vh - 140px);
+    color: var(--mainColor);
 }
 
 .title {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: var(--btnBackground, #0fd339);
+    color: var(--btnColor, #fff);
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: var(--borderRadius);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }

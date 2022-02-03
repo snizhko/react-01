@@ -1,6 +1,6 @@
 .header {
   grid-area: h;
-  background-color: #353535;
+  background-color: var(--mainBg);
 }
 
 .logo {
