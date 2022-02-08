@@ -17,8 +17,31 @@
 
 .messages {
     padding: 10px;
+    max-width: 800px;
 }
 
 .message {
+    display: flex;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: var(--mainColorInvert);
+    margin: 0 auto 10px 0;
+}
+
+.message:nth-of-type(even) {
+    flex-direction: row-reverse;
+    margin: 0 0 10px auto;
+    background-color: #d8f1f5;
+}
+
+.pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.text {
     padding: 10px;
 }

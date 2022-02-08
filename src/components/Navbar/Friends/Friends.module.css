@@ -1,0 +1,35 @@
+.friends {
+    margin-top: 40px;
+    border: 1px dashed #585858;
+    border-radius: var(--borderRadius);
+    padding: 5px 8px;
+}
+
+.title {
+    text-align: center;
+    font-size: 14px;
+}
+.list {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.item {
+    max-width: calc(33.3% - 5px);
+}
+
+.pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.name {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}

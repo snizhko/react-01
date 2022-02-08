@@ -27,6 +27,13 @@ let state = {
             {id: 6, text: 'Yo Yo Yo!'},
         ],
     },
+    sidebar: {
+        friends: [
+            {id: 1, name: 'Andrew', img: 'https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png'},
+            {id: 2, name: 'Masha', img: 'https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png'},
+            {id: 3, name: 'Mark', img: 'https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png'},
+        ],
+    },
 }
 
 export default state;
