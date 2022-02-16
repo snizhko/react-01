@@ -75,4 +75,9 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: opacity linear .25s;
+}
+
+.btn:hover {
+    opacity: .85;
 }

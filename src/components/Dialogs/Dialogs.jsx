@@ -1,6 +1,7 @@
 import s from "./Dialogs.module.css"
 import Message from "./Message/Message";
 import DialogsItem from "./DialogsItem/DialogsItem";
+import DialogsPost from "./DialogsPost/DialogsPost";
 
 const Dialogs = (props) => {
 
@@ -10,11 +11,12 @@ const Dialogs = (props) => {
     return (
         <div className={s.dialogs}>
             <ul className={s.dialogs_list}>
-                { dialogsElements }
+                {dialogsElements}
             </ul>
             <div className={s.messages}>
-                { messagesElements }
+                {messagesElements}
             </div>
+            <DialogsPost />
         </div>
     )
 }
